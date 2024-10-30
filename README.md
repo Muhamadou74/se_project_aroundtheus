@@ -32,3 +32,7 @@ Plans for Future Improvement
 Image Optimization
 
 Images are exported directly from Figma, then optimized using TinyPNG to ensure faster load times and a smoother user experience.
+
+### Live Demo
+
+[View the deployed project on GitHub Pages](https://Muhamadou74.github.io/Aroundtheus/)
