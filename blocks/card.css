@@ -30,6 +30,8 @@
   height: 18px;
   border: none;
   cursor: pointer;
+  justify-content: space-between;
+  transition: opacity 0.2s ease;
 }
 
 .card__like-button:hover {
@@ -40,7 +42,11 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  margin-top: 0;
-  margin-bottom: 0;
   max-width: 220px;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1.21;
+  margin: 0;
+  padding: 0;
 }

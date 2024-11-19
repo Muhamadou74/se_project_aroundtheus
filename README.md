@@ -35,4 +35,52 @@ Images are exported directly from Figma, then optimized using TinyPNG to ensure 
 
 ### Live Demo
 
-[View the deployed project on GitHub Pages](https://Muhamadou74.github.io/Aroundtheus/)
+[View the deployed project on GitHub Pages](https://Muhamadou74.github.io/aroundtheus/)
+
+# Around the U.S
+
+### Overview
+
+"Around the U.S" is a responsive webpage designed to showcase a profile section and a grid of beautiful cards representing scenic locations. This project emphasizes clean and maintainable code using the BEM methodology and demonstrates responsive design without media queries.
+
+---
+
+### **Features**
+
+- **Header**: Displays the project logo.
+- **Profile Section**:
+  - User avatar, name, and description.
+  - Edit and add buttons for interactivity.
+- **Card Grid**:
+  - A dynamic grid of six cards, each with an image, title, and like button.
+- **Responsive Design**:
+  - Seamlessly adapts to mobile, tablet, and desktop views using CSS Grid.
+
+---
+
+### **Live Demo**
+
+# Around the U.S
+
+### Project Walkthrough Video
+
+[Watch the Video on Loom](https://www.loom.com/share/9acb319e356e4f6a9d1bfe91c14e6326?sid=9eb7cafa-ca9d-4ca7-8f82-423f6535b9ab)
+
+In this video, I walk through the features of the "Around the U.S" project, including its responsive design, BEM structure, and implementation details.
+
+---
+
+### **Technology Stack**
+
+- **HTML5**: Semantic structure of the webpage.
+- **CSS3**: Styling and responsive layout using Grid and Flexbox.
+- **BEM Methodology**: Modular and maintainable CSS structure.
+
+---
+
+### **How to Run the Project**
+
+1. Clone this repository:
+   ```bash
+   git clone <repository-url>
+   ```
