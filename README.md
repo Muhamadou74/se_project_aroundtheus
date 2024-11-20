@@ -35,7 +35,7 @@ Images are exported directly from Figma, then optimized using TinyPNG to ensure 
 
 ### Live Demo
 
-[View the deployed project on GitHub Pages](https://Muhamadou74.github.io/aroundtheus/)
+[View the deployed project on GitHub Pages](https://muhamadou74.github.io/se_project_aroundtheus/)
 
 # Around the U.S
 
