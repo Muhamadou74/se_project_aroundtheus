@@ -62,13 +62,11 @@ Images are exported directly from Figma, then optimized using TinyPNG to ensure 
 
 # Around the U.S
 
-### Project Walkthrough Video
-
-[![Watch the Video](https://www.loom.com/share/7d325171cced495b8b10fcdfc16e4702?sid=30ceb8f9-ab58-43c0-a323-af217bfb2b53)
-
 In this video, I walk through the features of the "Around the U.S" project, including its responsive design, BEM structure, and implementation details.
 
----
+### Project Walkthrough Video
+
+## [Watch the Video on Loom](https://www.loom.com/share/7d325171cced495b8b10fcdfc16e4702?sid=46b668bb-c2db-4493-90de-2b931ef2484d)
 
 ### **Technology Stack**
 
