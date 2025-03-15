@@ -1,4 +1,5 @@
 .card {
+  position: relative;
   display: flex;
   flex-direction: column;
   list-style-type: none;
@@ -12,7 +13,7 @@
   object-fit: cover;
 }
 
-.card__discription {
+.card__content {
   display: flex;
   background-color: white;
   color: black;
@@ -24,7 +25,7 @@
   justify-content: space-between;
 }
 
-.card__like-button {
+.card__button-like {
   background: transparent url(../images/Group.svg) center no-repeat;
   width: 21px;
   height: 18px;
@@ -34,8 +35,28 @@
   transition: opacity 0.2s ease;
 }
 
-.card__like-button:hover {
+.card__button-like_active {
+  background-image: url(../images/like-active.svg);
+}
+
+.card__button-like:hover {
   opacity: 0.5;
+}
+
+.card__button-delete {
+  position: absolute;
+  top: 18px;
+  left: 250px;
+  background: transparent url(../images/Trash.svg) no-repeat;
+  border: none;
+  width: 18px;
+  height: 19.3px;
+  transition: opacity 0.5s ease-in;
+  cursor: pointer;
+}
+
+.card__button-delete:hover {
+  opacity: 60%;
 }
 
 .card__title {
