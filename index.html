@@ -70,14 +70,23 @@
             type="text"
             name="name"
             placeholder="Name"
+            minlength="2"
+            maxlength="40"
+            required
           />
+          <span class="modal__error" id="profile-name-input-error"></span>
           <input
             class="modal__form-input"
             id="profile-bio-input"
             type="text"
             name="bio"
             placeholder="Description"
+            minlength="2"
+            maxlength="200"
+            required
           />
+          <span class="modal__error" id="profile-bio-input-error"></span>
+
           <button class="modal__form-button">Save</button>
         </form>
       </div>
@@ -101,7 +110,13 @@
             name="link"
             placeholder="Image Link"
           />
-          <button class="modal__form-button">Save</button>
+          <button
+            class="modal__form-button modal__form-button_disabled"
+            type="submit"
+            disabled
+          >
+            Save
+          </button>
         </form>
       </div>
     </div>
@@ -132,5 +147,6 @@
     </template>
 
     <script src="scripts/index.js"></script>
+    <script src="scripts/validation.js"></script>
   </body>
 </html>
