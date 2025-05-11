@@ -131,3 +131,28 @@ addCardButton.addEventListener("click", function () {
 profileEditForm.addEventListener("submit", handleEditProfileSubmit);
 
 addCardForm.addEventListener("submit", handleAddCardSubmit);
+
+const modals = document.querySelectorAll(".modal");
+
+modals.forEach((modal) => {
+  // Close on overlay click
+  modal.addEventListener("mousedown", (e) => {
+    if (e.target === modal) {
+      closeModal(modal);
+    }
+  });
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    const openModal = document.querySelector(".modal_opened");
+    if (openModal) {
+      closeModal(openModal);
+    }
+  }
+});
+
+// Example modal close function
+function closeModal(modal) {
+  modal.classList.remove("modal_opened");
+}

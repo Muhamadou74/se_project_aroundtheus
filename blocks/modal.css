@@ -149,3 +149,12 @@
     line-height: 16.94px;
   }
 }
+
+.modal__form-button_disabled {
+  background-color: #e5e5e5; /* light gray */
+  color: #b3b3b3; /* soft gray text */
+  cursor: not-allowed;
+  border: none;
+  opacity: 0.6;
+  pointer-events: none; /* completely disables interaction */
+}
