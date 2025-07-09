@@ -106,6 +106,7 @@
             maxlength="30"
             required
           />
+          <span class="modal__error" id="card-title-input-error"></span>
 
           <input
             class="modal__form-input"
@@ -115,6 +116,7 @@
             placeholder="Image Link"
             required
           />
+          <span class="modal__error" id="image-link-input-error"></span>
           <button
             class="modal__form-button modal__form-button_disabled"
             type="submit"
@@ -151,7 +153,7 @@
       </li>
     </template>
 
-    <script src="scripts/index.js"></script>
-    <script src="scripts/validation.js"></script>
+    <script type="module" src="scripts/index.js" type="module"></script>
+    <!-- <script src="scripts/validation.js"></script> -->
   </body>
 </html>

@@ -1,3 +1,6 @@
+import FormValidator from "./FormValidator.js";
+import Card from "./Card.js";
+
 const initialCards = [
   {
     name: "Yosemite Valley",
@@ -49,8 +52,26 @@ const profileBio = document.querySelector(".profile__bio");
 const profileEditButton = document.querySelector("#profile-edit-button");
 const addCardButton = document.querySelector("#addCardButton");
 const closeButtons = document.querySelectorAll(".modal__close");
+const cardSelector = "#card-template";
 
 //functions
+
+const validationSettings = {
+  inputSelector: ".modal__form-input",
+  submitButtonSelector: ".modal__form-button",
+  inactiveButtonClass: "modal__form-button_disabled",
+  inputErrorClass: "modal__form-input_type_error",
+  errorClass: "modal__error_visible",
+};
+
+const editFormElement = profileEditModal.querySelector(".modal__form");
+const addFormElement = addCardModal.querySelector(".modal__form");
+
+const editFormValidator = new FormValidator(
+  validationSettings,
+  editFormElement
+);
+const eaddFormValidator = new FormValidator(validationSettings, addFormElement);
 
 function getCardElement(cardData) {
   const cardElement = cardTemplate.cloneNode(true);
@@ -81,7 +102,7 @@ function getCardElement(cardData) {
 }
 
 function renderCard(cardData, cardList) {
-  const cardElement = getCardElement(cardData);
+  const cardElement = getCardElement(cardData, cardSelector);
   cardList.prepend(cardElement);
 }
 
@@ -91,14 +112,6 @@ closeButtons.forEach((button) => {
   const modal = button.closest(".modal");
   button.addEventListener("click", () => closeModal(modal));
 });
-
-function openModal(modal) {
-  modal.classList.add("modal_opened");
-}
-
-function closeModal(modal) {
-  modal.classList.remove("modal_opened");
-}
 
 function handleEditProfileSubmit(e) {
   e.preventDefault();
@@ -142,17 +155,21 @@ modals.forEach((modal) => {
     }
   });
 });
-
-document.addEventListener("keydown", (e) => {
+function handleEscClose(e) {
   if (e.key === "Escape") {
     const openModal = document.querySelector(".modal_opened");
     if (openModal) {
       closeModal(openModal);
     }
   }
-});
+}
 
-// Example modal close function
+function openModal(modal) {
+  modal.classList.add("modal_opened");
+  document.addEventListener("keydown", handleEscClose);
+}
+
 function closeModal(modal) {
   modal.classList.remove("modal_opened");
+  document.removeEventListener("keydown", handleEscClose);
 }
