@@ -22,7 +22,8 @@ A single-page responsive website that showcases a collection of cards with beaut
 To run this project locally:
 
 1. Clone the repo:
+
    ```bash
-   git clone https://github.com/your-username/se_project_aroundtheus.git
+   git clone https://github.com/muhamadou74@gmail/se_project_aroundtheus.git
 
    ```
