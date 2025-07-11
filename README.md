@@ -24,6 +24,6 @@ To run this project locally:
 1. Clone the repo:
 
    ```bash
-   git clone https://github.com/muhamadou74@gmail/se_project_aroundtheus.git
+   git clone https://github.com/muhamadou74/se_project_aroundtheus.git
 
    ```
