@@ -18,7 +18,6 @@
       type="image/x-icon"
     />
     <title>Around the U.S</title>
-    <link href="./pages/index.css" rel="stylesheet" />
   </head>
   <body class="page">
     <div class="page__content">
@@ -51,14 +50,23 @@
             id="addCardButton"
           ></button>
         </section>
+
         <section class="cards page__section">
           <ul class="cards__list"></ul>
         </section>
+
+        <!-- ✅ New To-do Section -->
+        <section class="todo page__section">
+          <h2 class="todo__title">To-do List</h2>
+          <ul class="todo__list"></ul>
+        </section>
       </main>
+
       <footer class="footer">
         <p class="footer__copyright">&copy; 2022 Around The US</p>
       </footer>
     </div>
+
     <div class="modal" id="profile-edit-modal">
       <div class="modal__container">
         <button class="modal__close"></button>
@@ -91,6 +99,7 @@
         </form>
       </div>
     </div>
+
     <div class="modal" id="card-add-modal">
       <div class="modal__container">
         <button class="modal__close"></button>
@@ -127,6 +136,7 @@
         </form>
       </div>
     </div>
+
     <div class="modal" id="preview-image-modal">
       <div class="modal__image-container">
         <button
@@ -136,7 +146,8 @@
         <img
           class="modal__image-preview"
           id="image-preview"
-          alt="image-preview"
+          src="#"
+          alt="Preview of selected image"
         />
         <p class="modal__image-caption"></p>
       </div>
@@ -154,6 +165,5 @@
     </template>
 
     <script type="module" src="./pages/index.js"></script>
-    <!-- <script src="scripts/validation.js"></script> -->
   </body>
 </html>
