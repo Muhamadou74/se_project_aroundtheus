@@ -162,7 +162,6 @@
 // // Close Buttons
 // closeButtons.forEach((button) => {
 //   const modal = button.closest(".modal");
-//   button.addEventListener("click", () => closeModal(modal));
 // });
 import { v4 as uuidv4 } from "https://jspm.dev/uuid";
 import FormValidator from "../components/FormValidator.js";
