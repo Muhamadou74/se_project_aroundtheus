@@ -57,8 +57,6 @@ const closeButtons = document.querySelectorAll(".modal__close");
 const cardList = document.querySelector(".cards__list");
 const cardSelector = "#card-template";
 
-const todoList = document.querySelector(".todo__list"); // ✅ new todo list container
-
 // ----------- Validation Settings -----------
 const validationSettings = {
   inputSelector: ".modal__form-input",

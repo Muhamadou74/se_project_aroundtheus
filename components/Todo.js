@@ -1,5 +1,3 @@
-import { v4 as uuidv4 } from "https://jspm.dev/uuid";
-
 export default class Todo {
   constructor(text) {
     this.text = text;
