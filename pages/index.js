@@ -1,7 +1,5 @@
-import { v4 as uuidv4 } from "https://jspm.dev/uuid";
 import FormValidator from "../components/FormValidator.js";
 import Card from "../components/Card.js";
-import Todo from "../components/Todo.js";
 
 // ----------- Initial Data -----------
 const initialCards = [
@@ -94,18 +92,6 @@ function renderCard(cardData) {
 }
 
 initialCards.forEach(renderCard);
-
-// ----------- Todo Functions -----------
-function renderTodo(text) {
-  const todo = new Todo(text);
-  const todoElement = todo.generateTodo();
-  todoList.appendChild(todoElement);
-}
-
-// ✅ Example todos
-renderTodo("Finish Around the U.S project");
-renderTodo("Review JavaScript OOP");
-renderTodo("Submit Sprint 7");
 
 // ----------- Modal Functions -----------
 function openModal(modal) {
