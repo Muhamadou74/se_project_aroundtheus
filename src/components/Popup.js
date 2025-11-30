@@ -1,30 +1,3 @@
-// class Popup {
-//     constuctor({popupSelector}) {
-//         this._popupElement = document.querySelector(popupSelector);
-//     }
-
-//     oprn() {
-//         // opens popup
-
-//     }
-
-//     close() {
-//         // closes popup
-
-//     }
-
-//     _handleEscClose() {
-//         // listens for esc button
-
-//     }
-
-//     setEventListeners() {
-//         // Event Listeners
-
-//     }
-// }
-
-// components/Popup.js
 export default class Popup {
     constructor(popupSelector) {
       this._popupElement = document.querySelector(popupSelector);
@@ -48,15 +21,10 @@ export default class Popup {
     }
   
     setEventListeners() {
-      // close button (X)
       const closeButton = this._popupElement.querySelector(".modal__close");
-      if (closeButton) {
-        closeButton.addEventListener("click", () => {
-          this.close();
-        });
-      }
   
-      // close by clicking overlay
+      closeButton.addEventListener("click", () => this.close());
+  
       this._popupElement.addEventListener("mousedown", (evt) => {
         if (evt.target === this._popupElement) {
           this.close();

@@ -1,4 +1,5 @@
-// components/UserInfo.js
+// src/components/UserInfo.js
+
 export default class UserInfo {
     constructor({ nameSelector, bioSelector }) {
       this._nameElement = document.querySelector(nameSelector);
